@@ -1,0 +1,24 @@
+# Build artifacts
+build/
+*.o
+*.a
+*.out
+*.obj
+*.dll
+*.so
+*.jnilib
+*.exe
+*.class
+
+# Make build outputs
+lib/include/
+lib/lib/
+
+# SWIG generated
+*_wrap.cxx
+*_wrap.c
+
+# IDE
+.idea/
+*.swp
+.DS_Store
