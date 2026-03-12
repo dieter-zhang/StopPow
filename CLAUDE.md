@@ -54,10 +54,7 @@ StopPow (base) ─── dEdx, Eout, Ein, Thickness, Range (GSL ODE integration)
 - **test5 and test6 fail** with current GSL 2.8 — pre-existing numerical precision differences in the expected values, not regressions
 - `Fit.cpp` uses `gsl_multifit_fdfsolver_jac()` (GSL 2.x API); older GSL used `solver->J` directly
 - Linux/Windows Makefiles still reference `-std=c++11` (only Darwin paths were updated to C++17)
-- `StopPowGUI/` (Java GUI) is not buildable — depends on missing `SciTK.jar`
 
 ## Bindings
 
-- `python_swig/`: SWIG-generated Python bindings (`setup.py`)
-- `java_swig/`: SWIG-generated Java JNI bindings (Makefile)
-- Both share the same `StopPow.i` interface file
+- `python_swig/`: SWIG-generated Python bindings (`setup.py`, `StopPow.i`)
