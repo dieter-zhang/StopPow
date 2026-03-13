@@ -1,0 +1,1 @@
+/opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test2.dir/test/test2.cpp.o -o test2  libStopPow.a /opt/homebrew/lib/libgsl.dylib /opt/homebrew/lib/libgslcblas.dylib

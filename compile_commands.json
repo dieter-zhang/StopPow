@@ -1,0 +1,158 @@
+[
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_Plasma.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Plasma.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Plasma.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_Plasma.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_PartialIoniz.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_PartialIoniz.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_PartialIoniz.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_PartialIoniz.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_LP.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_LP.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_LP.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_LP.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_BetheBloch.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_BetheBloch.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_BetheBloch.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_BetheBloch.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_SRIM.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_SRIM.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_SRIM.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_SRIM.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_AZ.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_AZ.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_AZ.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_AZ.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_Mehlhorn.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Mehlhorn.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Mehlhorn.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_Mehlhorn.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_Grabowski.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Grabowski.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Grabowski.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_Grabowski.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_Zimmerman.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Zimmerman.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Zimmerman.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_Zimmerman.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_BPS.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_BPS.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_BPS.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_BPS.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/StopPow_Fit.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Fit.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/StopPow_Fit.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/StopPow_Fit.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/PlotGen.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/PlotGen.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/PlotGen.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/PlotGen.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/AtomicData.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/AtomicData.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/AtomicData.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/AtomicData.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/Spectrum.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/Spectrum.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/Spectrum.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/Spectrum.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow.dir/src/Fit.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/src/Fit.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/src/Fit.cpp",
+  "output": "CMakeFiles/StopPow.dir/src/Fit.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/StopPow_example.dir/examples/c++/main.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/examples/c++/main.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/examples/c++/main.cpp",
+  "output": "CMakeFiles/StopPow_example.dir/examples/c++/main.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test0.dir/test/test0.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test0.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test0.cpp",
+  "output": "CMakeFiles/test0.dir/test/test0.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test1.dir/test/test1.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test1.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test1.cpp",
+  "output": "CMakeFiles/test1.dir/test/test1.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test2.dir/test/test2.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test2.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test2.cpp",
+  "output": "CMakeFiles/test2.dir/test/test2.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test3.dir/test/test3.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test3.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test3.cpp",
+  "output": "CMakeFiles/test3.dir/test/test3.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test4.dir/test/test4.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test4.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test4.cpp",
+  "output": "CMakeFiles/test4.dir/test/test4.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test5.dir/test/test5.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test5.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test5.cpp",
+  "output": "CMakeFiles/test5.dir/test/test5.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test6.dir/test/test6.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test6.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test6.cpp",
+  "output": "CMakeFiles/test6.dir/test/test6.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test7.dir/test/test7.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test7.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test7.cpp",
+  "output": "CMakeFiles/test7.dir/test/test7.cpp.o"
+},
+{
+  "directory": "/Users/dieter/workspace/code.repos/kinetics/StopPow",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/dieter/workspace/code.repos/kinetics/StopPow/src -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -o CMakeFiles/test8.dir/test/test8.cpp.o -c /Users/dieter/workspace/code.repos/kinetics/StopPow/test/test8.cpp",
+  "file": "/Users/dieter/workspace/code.repos/kinetics/StopPow/test/test8.cpp",
+  "output": "CMakeFiles/test8.dir/test/test8.cpp.o"
+}
+]

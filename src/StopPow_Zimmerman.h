@@ -1,19 +1,3 @@
-// StopPow - a charged-particle stopping power library
-// Copyright (C) 2014  Massachusetts Institute of Technology / Alex Zylstra
-
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version.
-
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License along
-// with this program; if not, write to the Free Software Foundation, Inc.,
-// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 /**
  * @brief Calculate Zimmerman stopping power.
@@ -23,10 +7,6 @@
  * "Recent Developments in Monte Carlo Techniques", The Nuclear Explosive Code Developers' Conference, 1990.
  * UCRL-JC-105616
  *
- * @class StopPow::StopPow_Zimmerman
- * @author Alex Zylstra
- * @date 2014/04/03
- * @copyright Alex Zylstra / MIT
  */
 
 #ifndef STOPPOW_ZIMMERMAN_H
@@ -34,20 +14,20 @@
 
 #include <math.h>
 
-#include <iostream>
-#include <vector>
-#include <stdexcept>
-#include <gsl/gsl_sf_erf.h>
-#include <gsl/gsl_sf_gamma.h>
-#include <gsl/gsl_sf_fermi_dirac.h>
-#include <gsl/gsl_roots.h>
 #include <gsl/gsl_deriv.h>
 #include <gsl/gsl_errno.h>
 #include <gsl/gsl_math.h>
+#include <gsl/gsl_roots.h>
+#include <gsl/gsl_sf_erf.h>
+#include <gsl/gsl_sf_fermi_dirac.h>
+#include <gsl/gsl_sf_gamma.h>
+#include <iostream>
+#include <stdexcept>
+#include <vector>
 
-#include "StopPow_PartialIoniz.h"
-#include "StopPow_Constants.h"
 #include "AtomicData.h"
+#include "StopPow_Constants.h"
+#include "StopPow_PartialIoniz.h"
 
 namespace StopPow
 {
@@ -55,9 +35,9 @@ namespace StopPow
 class StopPow_Zimmerman : public StopPow_PartialIoniz
 {
 public:
-	// Partially ionized constructors:
+    // Partially ionized constructors:
 
-	/** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
+    /** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
 	 * @param mt the test particle mass in AMU
 	 * @param Zt the test particle in charge (units of e)
 	 * @param mf vector containing ordered field ion masses in AMU
@@ -68,9 +48,16 @@ public:
  	 * @param Te the electron temperature in keV
  	 * @throws invalid_argument
 	 */
-	StopPow_Zimmerman(double mt, double Zt, std::vector<double> & mf, std::vector<double> & Zf, std::vector<double> & Tf, std::vector<double> & nf, std::vector<double> & Zbar, double Te);
+    StopPow_Zimmerman(double mt,
+                      double Zt,
+                      std::vector<double>& mf,
+                      std::vector<double>& Zf,
+                      std::vector<double>& Tf,
+                      std::vector<double>& nf,
+                      std::vector<double>& Zbar,
+                      double Te);
 
-	/** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
+    /** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
 	 * @param mt the test particle mass in AMU
 	 * @param Zt the test particle in charge (units of e)
 	 * @param field vector containing field ion info. Each row is one type of ion, then the array must contain:
@@ -78,87 +65,87 @@ public:
 	 * @param Te the electron temperature in keV
  	 * @throws invalid_argument
 	 */
-	StopPow_Zimmerman(double mt, double Zt, std::vector< std::array<double,5> > & field, double Te);
+    StopPow_Zimmerman(double mt, double Zt, std::vector<std::array<double, 5>>& field, double Te);
 
-	/** Destructor */
-	~StopPow_Zimmerman();
-	
-	/** Calculate the total stopping power
+    /** Destructor */
+    ~StopPow_Zimmerman();
+
+    /** Calculate the total stopping power
 	 * @param E the test particle energy in MeV
 	 * @return stopping power in units of MeV/um
  	 * @throws invalid_argument
 	 */
-	double dEdx_MeV_um(double E);
+    double dEdx_MeV_um(double E);
 
-	/** Calculate the total stopping power
+    /** Calculate the total stopping power
 	 * @param E the test particle energy in MeV
 	 * @return stopping power in units of MeV/(mg/cm2)
  	 * @throws invalid_argument
 	 */
-	double dEdx_MeV_mgcm2(double E);
+    double dEdx_MeV_mgcm2(double E);
 
-	/**
+    /**
 	 * Get the minimum energy that can be used for dE/dx calculations (inclusive)
 	 * @return Emin in MeV
 	 */
-	double get_Emin();
+    double get_Emin();
 
-	/**
+    /**
 	 * Get the maximum energy that can be used for dE/dx calculations (inclusive)
 	 * @return Emax in MeV
 	 */
-	double get_Emax();
+    double get_Emax();
 
-	/** Free electron component of the stopping power
+    /** Free electron component of the stopping power
 	* @param E the test particle energy in MeV
 	* @return dE/dx due to electrons in MeV/um
 	*/
-	double dEdx_free_electron(double E);
+    double dEdx_free_electron(double E);
 
-	/** Bound electron component of the stopping power
+    /** Bound electron component of the stopping power
 	* @param E the test particle energy in MeV
 	* @return dE/dx due to electrons in MeV/um
 	*/
-	double dEdx_bound_electron(double E);
+    double dEdx_bound_electron(double E);
 
-	/** Ion component of the stopping power
+    /** Ion component of the stopping power
 	* @param E the test particle energy in MeV
 	* @return dE/dx due to electrons in MeV/um
 	*/
-	double dEdx_ion(double E);
+    double dEdx_ion(double E);
 
-	/** Use the quantum correction to free electron thermal velocity?
+    /** Use the quantum correction to free electron thermal velocity?
 	* Eq 18 instead of 19
 	* @param set true to use the quantum correction
 	*/
-	void set_quantum(bool set);
+    void set_quantum(bool set);
 
 private:
-	/** Specific initialization routines */
-	void init();
-	void init_plasma();
+    /** Specific initialization routines */
+    void init();
+    void init_plasma();
 
-	/** Whether to use the quantum correction for electrons */
-	bool quantum {true};
+    /** Whether to use the quantum correction for electrons */
+    bool quantum{true};
 
-	// helper functions:
+    // helper functions:
 
-	/** Free electron stopping number, Eq 15
+    /** Free electron stopping number, Eq 15
 	* @param y ratio of particle/field velocity (y=Vp/Ve)
 	* @param LambdaF defined in Eq 16
 	* @return free electron stopping number
 	*/
-	double LF(double y, double LambdaF);
+    double LF(double y, double LambdaF);
 
-	/** Calculate total Debye length with all plasma components
+    /** Calculate total Debye length with all plasma components
 	* @returns Debye length in cm
 	*/
-	double lDebye();
+    double lDebye();
 
-	/* Minimum energy for dE/dx calculations */
-	static const double Emin; 
-	/* Maximum energy for dE/dx calculations */
-	static const double Emax; 
+    /* Minimum energy for dE/dx calculations */
+    static const double Emin;
+    /* Maximum energy for dE/dx calculations */
+    static const double Emax;
 };
 
 } // end namespace StopPow

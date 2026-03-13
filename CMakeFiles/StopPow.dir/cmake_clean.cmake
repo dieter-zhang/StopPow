@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/StopPow.dir/src/AtomicData.cpp.o"
+  "CMakeFiles/StopPow.dir/src/AtomicData.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/Fit.cpp.o"
+  "CMakeFiles/StopPow.dir/src/Fit.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/PlotGen.cpp.o"
+  "CMakeFiles/StopPow.dir/src/PlotGen.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/Spectrum.cpp.o"
+  "CMakeFiles/StopPow.dir/src/Spectrum.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_AZ.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_AZ.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_BPS.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_BPS.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_BetheBloch.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_BetheBloch.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_Fit.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_Fit.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_Grabowski.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_Grabowski.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_LP.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_LP.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_Mehlhorn.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_Mehlhorn.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_PartialIoniz.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_PartialIoniz.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_Plasma.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_Plasma.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_SRIM.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_SRIM.cpp.o.d"
+  "CMakeFiles/StopPow.dir/src/StopPow_Zimmerman.cpp.o"
+  "CMakeFiles/StopPow.dir/src/StopPow_Zimmerman.cpp.o.d"
+  "libStopPow.a"
+  "libStopPow.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/StopPow.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

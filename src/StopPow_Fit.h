@@ -1,19 +1,3 @@
-// StopPow - a charged-particle stopping power library
-// Copyright (C) 2014  Massachusetts Institute of Technology / Alex Zylstra
-
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version.
-
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// You should have received a copy of the GNU General Public License along
-// with this program; if not, write to the Free Software Foundation, Inc.,
-// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 /**
  * @brief Adjustable and combination model for fitting experimental data
@@ -38,25 +22,21 @@
  * Zimmerman (default), Li-Petrasso, BPS, Grabowski, Grabowski w/ quantum BPS
  * The entire free-electron dE/dx is scaled.
  *
- * @class StopPow::StopPow_Fit
- * @author Alex Zylstra
- * @date 2014/10/08
- * @copyright Alex Zylstra / MIT
  */
 
 #ifndef STOPPOW_FIT_H
 #define STOPPOW_FIT_H
 
-#include <vector>
-#include <stdexcept>
 #include <math.h>
+#include <stdexcept>
+#include <vector>
 
 #include "StopPow.h"
-#include "StopPow_PartialIoniz.h"
-#include "StopPow_Zimmerman.h"
-#include "StopPow_LP.h"
 #include "StopPow_BPS.h"
 #include "StopPow_Grabowski.h"
+#include "StopPow_LP.h"
+#include "StopPow_PartialIoniz.h"
+#include "StopPow_Zimmerman.h"
 
 namespace StopPow
 {
@@ -64,7 +44,7 @@ namespace StopPow
 class StopPow_Fit : public StopPow_PartialIoniz
 {
 public:
-	/** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
+    /** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
 	 * @param mt the test particle mass in AMU
 	 * @param Zt the test particle in charge (units of e)
 	 * @param mf vector containing ordered field ion masses in AMU
@@ -75,9 +55,16 @@ public:
  	 * @param Te the electron temperature in keV
  	 * @throws invalid_argument
 	 */
-	StopPow_Fit(double mt, double Zt, std::vector<double> & mf, std::vector<double> & Zf, std::vector<double> & Tf, std::vector<double> & nf, std::vector<double> & Zbar, double Te);
+    StopPow_Fit(double mt,
+                double Zt,
+                std::vector<double>& mf,
+                std::vector<double>& Zf,
+                std::vector<double>& Tf,
+                std::vector<double>& nf,
+                std::vector<double>& Zbar,
+                double Te);
 
-	/** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
+    /** Initialize the stopping power. Electrons should not be included in lists - they will be added automatically!
 	 * @param mt the test particle mass in AMU
 	 * @param Zt the test particle in charge (units of e)
 	 * @param field vector containing field ion info. Each row is one type of ion, then the array must contain:
@@ -85,84 +72,83 @@ public:
 	 * @param Te the electron temperature in keV
  	 * @throws invalid_argument
 	 */
-	StopPow_Fit(double mt, double Zt, std::vector< std::array<double,5> > & field, double Te);
+    StopPow_Fit(double mt, double Zt, std::vector<std::array<double, 5>>& field, double Te);
 
-	/**
+    /**
 	 * Destructor
 	 */
-	~StopPow_Fit();
+    ~StopPow_Fit();
 
-	/**
+    /**
 	 * Get stopping power from the data.
 	 * @param E the particle energy in MeV
 	 * @return dE/dx in MeV/um
  	 * @throws invalid_argument
 	 */
-	double dEdx_MeV_um(double E);
+    double dEdx_MeV_um(double E);
 
-	/**
+    /**
 	 * Get stopping power from the data.
 	 * @param E the particle energy in MeV
 	 * @return dE/dx in MeV/(mg/cm2)
  	 * @throws invalid_argument
 	 */
-	double dEdx_MeV_mgcm2(double E);
+    double dEdx_MeV_mgcm2(double E);
 
-	/**
+    /**
 	 * Get the minimum energy that can be used for dE/dx calculations (inclusive)
 	 * @return Emin in MeV
 	 */
-	double get_Emin();
+    double get_Emin();
 
-	/**
+    /**
 	 * Get the maximum energy that can be used for dE/dx calculations (inclusive)
 	 * @return Emax in MeV
 	 */
-	double get_Emax();
+    double get_Emax();
 
-	/** Normalize the bound-electron stopping to a reference case at a given proton energy.
+    /** Normalize the bound-electron stopping to a reference case at a given proton energy.
 	 * @param ref The cold-matter reference dE/dx to use
 	 * @param Ep normalize the stopping at this energy
 	 */
-	void normalize_bound_e(StopPow * ref, double Ep);
+    void normalize_bound_e(StopPow* ref, double Ep);
 
-	/** Free electron models that may be used */
-	static const int MODE_ZIMMERMAN;
-	static const int MODE_LP;
-	static const int MODE_LP_PUB;
-	static const int MODE_BPS;
-	static const int MODE_GRABOWSKI;
-	static const int MODE_QUANTUM_GRABOWSKI;
-	/** Choose the free-electron stopping model.
+    /** Free electron models that may be used */
+    static const int MODE_ZIMMERMAN;
+    static const int MODE_LP;
+    static const int MODE_LP_PUB;
+    static const int MODE_BPS;
+    static const int MODE_GRABOWSKI;
+    static const int MODE_QUANTUM_GRABOWSKI;
+    /** Choose the free-electron stopping model.
 	* @param new_model the new model to be used, must pass one of `MODE_ZIMMERMAN`, `MODE_LP`, `MODE_BPS`, `MODE_GRABOWSKI`, or `MODE_QUANTUM_GRABOWSKI`.
 	*/
-	void choose_model(int new_model);
+    void choose_model(int new_model);
 
-	/** Adjust the stopping, to be used for fitting
+    /** Adjust the stopping, to be used for fitting
 	* @param factor set the free-electron adjustment factor
 	*/
-	void set_factor(double factor);
+    void set_factor(double factor);
 
-	/** Get the current adjustment factor
+    /** Get the current adjustment factor
 	@return current free-electron adjustment factor
 	*/
-	double get_factor();
+    double get_factor();
 
 private:
-	/** Initialization with default parameters */
-	void init();
+    /** Initialization with default parameters */
+    void init();
 
-	/** Scaling factors */
-	double be_factor {1};
-	double fe_factor {1};
+    /** Scaling factors */
+    double be_factor{1};
+    double fe_factor{1};
 
-	/** Models to be used */
-	StopPow_Zimmerman * z {NULL};
-	StopPow * fe {NULL};
-	StopPow * fe2 {NULL};
-	int fe_model {MODE_ZIMMERMAN};
-
+    /** Models to be used */
+    StopPow_Zimmerman* z{NULL};
+    StopPow* fe{NULL};
+    StopPow* fe2{NULL};
+    int fe_model{MODE_ZIMMERMAN};
 };
 
 } // end namespace StopPow
- #endif
+#endif
